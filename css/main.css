@@ -1,275 +1,227 @@
-
 /* =====================================
-=       Aspecto de la pagina          =
+=          Aspecto de la Pagina       =
 ===================================== */
-
-
 /* ========= Tipografias ========= */
-
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
-
-
-
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap");
 /* ========= General ========= */
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-main{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 15px;
-    padding: 45px;
-    margin-left: 15%;
-}
-
-.h1{
-    font-family: 'Playfair Display', serif;
-    text-align: left;
-    margin: 0px 0px 20px 0px;
-}
-.PaginaPP{
-    font-family: 'Lora', serif;
-
-}
-
-.MenuCA{
-    font-family: 'Playfair Display', serif;
-    text-align: center;
-    margin: 0px 0px 20px 0px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Lora', serif;
-    min-height: 100vh;
-    background-color: rgb(251, 239, 224);
+  display: flex;
+  flex-direction: column;
+  font-family: "Lora", serif;
+  min-height: 100vh;
+  background-color: rgb(251, 239, 224);
+}
+body h1, body h2 {
+  font-family: "Playfair Display", serif;
+}
+body .h1 {
+  text-align: left;
+  margin: 0px 0px 20px 0px;
+}
+body header {
+  background-color: #FFFBF5;
+  margin: 0px;
+  padding: 0px;
+}
+body header .sidebar {
+  font-family: "Playfair Display", serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  max-width: 15%;
+  min-width: 10%;
+  height: 100vh;
+  background-color: #333;
+  color: white;
+  padding: 30px;
+  overflow-y: auto;
+}
+body header .sidebar ul {
+  list-style: none;
+}
+body header .sidebar ul li {
+  margin: 15px 0;
+}
+body header .sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  padding: 10px;
+}
+body header .sidebar ul li a:hover {
+  background-color: #555;
+}
+body header .sidebar .content {
+  flex-grow: 1;
+  padding: 20px;
+}
+body header .sidebar .logo {
+  width: 100px;
+  height: 100px;
+  margin: 25px;
+  margin-bottom: 0px;
+}
+body main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  padding: 45px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+body main .PaginaPP {
+  font-family: "Lora", serif;
+}
+body main .MenuCA {
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  margin: 0px 0px 20px 0px;
+}
+body main h3 {
+  text-align: center;
+}
+body main .menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(1fr, 200px));
+  gap: 20px;
+}
+body main .menu-grid .Prolijo {
+  max-width: 200px;
+  min-width: 200px;
+}
+body main .menu-grid img {
+  flex-shrink: 0;
+  width: 200px;
+  height: auto;
+}
+body main .menu-grid p {
+  flex-grow: 1;
+}
+body main .menu-grid .menu-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  max-width: 800px;
+  max-height: 400px;
+}
+body main .CA {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+body main .CafeGrid {
+  display: grid;
+  grid-template-areas: "texto-intro texto-intro" "imagen-central info-cafe" "informacion-extra informacion-extra";
+  gap: 20px;
+  padding: 20px;
+}
+body main .TextoIntro {
+  grid-area: texto-intro;
+  text-align: center;
+}
+body main .ImagenCentral {
+  grid-area: imagen-central;
+  text-align: center;
+}
+body main .InformacionExtra {
+  grid-area: informacion-extra;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+body main .InformacionCafe {
+  grid-area: info-cafe;
+}
+body main .contacto-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+body main .h1 {
+  align-items: flex-start;
+}
+body main .redes, body main .contacto-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+body main .imagen-central {
+  display: flex;
+  justify-content: center;
+}
+body main .imagen-central img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+body main ul li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+body main ul li a:hover {
+  color: #7B3F00;
+  text-decoration: underline;
+}
+body main ul p a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+body main ul p a:hover {
+  color: #7B3F00;
+  text-decoration: underline;
+}
+body footer {
+  color: aliceblue;
+  position: relative;
+  text-align: center;
+  padding: 15px 10px;
+  background-color: #333;
+}
+body .imagentipo1 {
+  max-width: 200px;
+  min-height: 200px;
+  max-height: 200px;
+  min-height: 200px;
+  margin: 15px 10px 10px 5px;
+  clear: both;
+  object-fit: cover;
+}
+body .imagentipo2 {
+  width: 90%;
+  height: 90%;
+  margin: 15px 10px 10px 5px;
+  clear: both;
+}
+body .imagentipo3 {
+  width: 200px;
+  height: 200px;
+  margin: 15px 10px 10px 5px;
+  clear: both;
+}
+body .UnoPaginaPP {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+body .DosPaginaPP {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 15px;
 }
 
-
-/* ========= Barra de Navegacion ========= */
-
-
-.sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 200px;
-    max-width: 15%;
-    min-width: 10%;
-    height: 100vh; 
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    overflow-y: auto; 
-}
-
-
-.sidebar ul {
-    list-style: none;
-}
-
-.sidebar ul li {
-    margin: 15px 0;
-}
-
-.sidebar ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    display: block;
-    padding: 10px;
-}
-
-.sidebar ul li a:hover {
-    background-color: #555;
-}
-
-.content {
-    flex-grow: 1;
-    padding: 20px;
-}
-
-
-.logo {
-    width: 100px;
-    height: 100px;
-    margin: 25px;
-    margin-bottom: 0px
-}
-
-header{
-    background-color: #FFFBF5;
-    margin: 0px;
-    padding: 0px;
-}
-
-nav .SideBar{
-    padding: 15%;
-    font-family: 'Playfair Display', serif;
-}
-/* ========= Desarrollo ========= */
-
-h1, h2{
-    font-family: 'Playfair Display', serif;
-
-}
-
-main h3{
-    text-align: center;
-}
-
-footer {
-    color: aliceblue;
-    position: relative;
-    text-align: center;
-    padding: 15px 10px;
-    background-color: #333;
-}
-
-/* Menu de Cafe */
-
-.menu-grid {
-    display: grid; 
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px; 
-}
-
-.menu-item {
-    display: flex; 
-    align-items: center;
-    gap: 15px; 
-    margin-bottom: 20px; 
-}
-
-.menu-item img {
-    flex-shrink: 0; 
-    width: 200px; 
-    height: auto; 
-}
-
-.menu-item p {
-    flex-grow: 1; 
-}
-
-/* Sobre Cafes */
-
-main .CA{
-    display: flex;
-    flex-direction: column;
-    gap: 20px; 
-}
-
-.CafeGrid {
-    display: grid;
-    grid-template-areas:
-        "texto-intro texto-intro"
-        "imagen-central info-cafe"
-        "informacion-extra informacion-extra";
-    gap: 20px;
-    padding: 20px;
-}
-
-.TextoIntro {
-    grid-area: texto-intro;
-    text-align: center;
-}
-
-.ImagenCentral {
-    grid-area: imagen-central;
-    display: flex;
-    justify-content: center;
-}
-
-.InformacionExtra {
-    grid-area: informacion-extra;
-    display: flex;
-    flex-direction: column;
-    gap: 10px; 
-}
-
-.InformacionCafe {
-    grid-area: info-cafe;
-}
-
-
-/* Contacto */
-
-.contacto-flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-}
-
-.h1{
-    align-items: flex-start;
-}
-
-.redes, .contacto-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.imagen-central {
-    display: flex;
-    justify-content: center;
-}
-
-.imagen-central img {
-    width: 300px;
-    height: auto;
-    border-radius: 10px;
-}
-
-main ul li a {
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-main ul li a:hover {
-    color: #7B3F00;
-    text-decoration: underline;
-}
-
-ul p a{
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-ul p a:hover{
-    color: #7B3F00;
-    text-decoration: underline;
-}
-
-/* ========= Imagenes ========= */
-
-.imagentipo1 {
-    width: 200px;
-    height: 200px;
-    margin: 15px 10px 10px 5px;
-    clear: both;
-}
-
-.UnoPaginaPP{
-    display: flex;
-    align-items: center; 
-    gap: 10px; 
-}
-
-.DosPaginaPP{
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 15px;
-}
+/*# sourceMappingURL=main.css.map */
