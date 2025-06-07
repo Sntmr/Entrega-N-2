@@ -47,10 +47,10 @@ body {
             position: fixed;
             top: 0;
             left: 0;
-            width: 200px;
-            max-width: 15%;
-            min-width: 10%;
-            height: 100vh;
+            width: 250px;
+            max-width: 20%;
+            min-width: 5%;
+            height: 150vh;
             background-color: #333;
             color: white;
             padding: 30px;
@@ -115,7 +115,7 @@ body {
 
         .menu-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(1fr, 200px));
+            grid-template-columns: repeat(1fr, 1fr);
             gap: 20px;
 
             .Prolijo{
@@ -250,10 +250,10 @@ body {
     }
 
     .imagentipo1 {
-        max-width: 200px;
-        min-height: 200px;
-        max-height: 200px;
-        min-height: 200px;
+        max-width: 100px;
+        min-height: 100px;
+        max-height: 100px;
+        min-height: 100px;
         margin: 15px 10px 10px 5px;
         clear: both;
         object-fit: cover;
@@ -261,15 +261,19 @@ body {
 
     .imagentipo2 {
         width: 90%;
-        height: 90%;
+        max-width: 200px;
+        height: 200px;
+        max-height: 200px;
         margin: 15px 10px 10px 5px;
         clear: both;
     }
 
     .imagentipo3 {
         width: 200px;
+        max-width: 200px;
         height: 200px;
-         margin: 15px 10px 10px 5px;
+        max-height: 200px;
+        margin: 15px 10px 10px 5px;
         clear: both;
     }
 
